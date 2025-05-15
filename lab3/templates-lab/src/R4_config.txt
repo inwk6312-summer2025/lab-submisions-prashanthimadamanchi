@@ -1,0 +1,7 @@
+!
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+!
+interface GigabitEthernet1/14
+ ip address 14.0.0.4 255.255.255.0
+!

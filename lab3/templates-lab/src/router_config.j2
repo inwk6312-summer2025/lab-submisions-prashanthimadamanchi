@@ -1,0 +1,9 @@
+!
+interface Loopback0
+ ip address {{ router.loopback.address }} {{ router.loopback.mask }}
+!
+{% for interface in router.interfaces %}
+interface {{ interface.name }}
+ ip address {{ interface.address }} {{ interface.mask }}
+!
+{% endfor %}

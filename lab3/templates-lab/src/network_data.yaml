@@ -1,0 +1,39 @@
+routers:
+  R1:
+    loopback:
+      address: 1.1.1.1
+      mask: 255.255.255.255
+    interfaces:
+      - name: GigabitEthernet1/12
+        address: 12.0.0.1
+        mask: 255.255.255.0
+      - name: GigabitEthernet1/13
+        address: 13.0.0.1
+        mask: 255.255.255.0
+      - name: GigabitEthernet1/14
+        address: 14.0.0.1
+        mask: 255.255.255.0
+  R2:
+    loopback:
+      address: 2.2.2.2
+      mask: 255.255.255.255
+    interfaces:
+      - name: GigabitEthernet1/12
+        address: 12.0.0.2
+        mask: 255.255.255.0
+  R3:
+    loopback:
+      address: 3.3.3.3
+      mask: 255.255.255.255
+    interfaces:
+      - name: GigabitEthernet1/13
+        address: 13.0.0.3
+        mask: 255.255.255.0
+  R4:
+    loopback:
+      address: 4.4.4.4
+      mask: 255.255.255.255
+    interfaces:
+      - name: GigabitEthernet1/14
+        address: 14.0.0.4
+        mask: 255.255.255.0
