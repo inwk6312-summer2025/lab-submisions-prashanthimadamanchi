@@ -1,0 +1,7 @@
+Value Protocol (\S+)
+Value Network (\d+\.\d+\.\d+\.\d+/\d+)
+Value NextHop (\d+\.\d+\.\d+\.\d+)
+Value Interface (\S+)
+
+Start
+  ^${Protocol}\s+${Network}(\s+\[\d+/\d+\])?\s+via\s+${NextHop},.*${Interface} -> Record
